@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PIXABAY_API_KEY = "48156203-aa0c9192899146c5232ae5ad3";
+const PIXABAY_API_KEY = process.env.REACT_APP_PIXABAY_API_KEY; // Use environment variable
 const PIXABAY_BASE_URL = "https://pixabay.com/api/";
 
 export const fetchImages = async (query) => {
